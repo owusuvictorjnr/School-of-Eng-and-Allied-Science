@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.about {
+  @apply flex
+  items-center
+  flex-col
+  relative
+  duration-700
+  text-sm
+  text-blue-500 
+  hover:text-gray-200
+  hover:underline
+  md:text-lg;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.about:hover > .dropDownItems {
+  @apply flex
+  flex-col
+  absolute
+  top-[0.5rem]
+  bg-white/60
+  shadow-lg
+  /* border */
+  /* border-green-500 */
+  rounded
+  duration-700
+  right-0
+  gap-2
+  text-sm
+  w-[10rem]
+  min-h-[13rem]
+  pb-5
+  px-2
+  pt-5
+  mt-5
+  justify-center
+  lg:top-2;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.dropDownItems {
+  display: none;
+}
+
+.dropDownDiv {
+  @apply border 
+  bottom-2 
+  py-2 px-3 
+  rounded 
+  hover:bg-gray-200
+  text-blue-700
+  text-center
+  hover:duration-700
+  ease-out;
+}
+
+/* Slug */
+.slug {
+  @apply capitalize bg-blue-200 p-2 rounded-md;
 }
