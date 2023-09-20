@@ -20,12 +20,13 @@
   flex-col
   absolute
   top-[0.5rem]
-  bg-white/60
+  bg-slate-400
   shadow-lg
   /* border */
   /* border-green-500 */
   rounded
   duration-700
+  delay-500
   right-0
   gap-2
   text-sm
@@ -57,5 +58,68 @@
 
 /* Slug */
 .slug {
-  @apply capitalize bg-blue-200 p-2 rounded-md;
+  @apply capitalize 
+  bg-yellow-500
+  p-2 
+  flex
+  gap-5
+  rounded-md
+  justify-center
+  text-white
+  hover:bg-slate-200
+  hover:text-blue-500 
+  duration-500
+  lg:w-[35rem];
 }
+
+/* about-readmore */
+.about-readmore {
+  @apply capitalize 
+  bg-yellow-500
+  p-2 
+  flex
+  gap-5
+  w-full
+  rounded-md
+  justify-center
+  text-white
+  hover:bg-slate-200
+  hover:text-blue-500 
+  duration-500
+  md:w-[35rem];
+}
+
+/* CS */
+.cs-about {
+  @apply bg-blue-500 
+  text-center 
+  capitalize
+  text-white
+  h-[2rem]
+  flex
+  items-center
+  justify-center;
+}
+
+/* Executive */
+.cs-exec {
+  @apply bg-blue-500 
+  text-center 
+  capitalize
+  text-white
+  h-[2rem]
+  flex
+  items-center
+  justify-center;
+}
+/* .img {
+  @apply mt-5
+  h-[15rem]
+  bg-red-200
+  w-[15rem]
+  mb-10
+
+  flex 
+  justify-center
+  items-center
+} */
