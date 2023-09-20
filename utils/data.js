@@ -36,4 +36,44 @@ export const myData = {
       slug: 'electrical-&-communication-engineering',
     },
   ],
+
+  faculty: [
+    {
+      name: 'mr. daniel',
+      image: '/images/main.jpg',
+    },
+
+    {
+      name: 'mr. daniel',
+      image: '/images/main.jpg',
+    },
+
+    {
+      name: 'mr. daniel',
+      image: '/images/main.jpg',
+    },
+  ],
+
+  executives: [
+    {
+      slug: 'computer science',
+      name: 'john doe',
+      image: '',
+      position: 'presiednt',
+    },
+
+    {
+      deslugpt: 'computer engineering',
+      name: 'john doe',
+      image: '',
+      position: 'presiednt',
+    },
+
+    {
+      slug: 'biomedical engineering',
+      name: 'john doe',
+      image: '',
+      position: 'presiednt',
+    },
+  ],
 }
