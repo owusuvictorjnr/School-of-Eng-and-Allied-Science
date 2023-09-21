@@ -1,7 +1,7 @@
-import { myData } from '@/utils/data'
+// import { myData } from '@/utils/data'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
-import React, { useState } from 'react'
+// import { useRouter } from 'next/router'
+import React from 'react'
 
 // export async function getServerSideProps(context) {
 //   const department = jsonData[context.params.slug]
@@ -13,7 +13,7 @@ import React, { useState } from 'react'
 // }
 
 const CS = ({ department }) => {
-  const [data, setData] = useState(jsonData)
+  // const [data, setData] = useState(jsonData)
   // const { query } = useRouter
   // const { slug } = query
   return (
